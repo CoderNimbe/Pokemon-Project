@@ -36,7 +36,7 @@ const SignIn = () => {
       localStorage.setItem('token', token);
     }
   };
-  if (isAuthenticated) return <Redirect to='/' />;
+  if (isAuthenticated) return <Redirect to='/battleground' />;
   return (
     <div className='container'>
       {error && (

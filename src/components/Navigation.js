@@ -5,7 +5,7 @@ import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
 
 const Navigation = () => {
-  const { isAuthenticated } = useContext(AuthContext);
+  const { isAuthenticated, logout } = useContext(AuthContext);
   return (
     <Navbar bg='light' expand='lg'>
       <Link to='/'>
@@ -29,7 +29,7 @@ const Navigation = () => {
                 <NavLink to='/battleground'>Play</NavLink>
               </Nav.Link>
               <Nav.Link>
-                <NavLink to='/logout'>Logout</NavLink>
+                <div onClick={logout}>Logout</div>
               </Nav.Link>
             </Fragment>
           )}
