@@ -6,6 +6,7 @@ import SignIn from './components/SignIn';
 import Battleground from './components/Battleground';
 import NotFound from './components/NotFound';
 import ProtectedRoute from './components/ProtectedRoute';
+import "./App.css"
 
 const App = () => {
   return (
