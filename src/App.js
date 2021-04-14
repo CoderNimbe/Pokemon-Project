@@ -3,6 +3,7 @@ import Navigation from './components/Navigation';
 import Home from './components/Home';
 import SignUp from './components/SignUp';
 import SignIn from './components/SignIn';
+import "./App.css"
 
 const App = () => {
   return (
